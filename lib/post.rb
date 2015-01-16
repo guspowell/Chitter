@@ -4,6 +4,5 @@ class Post
 
 	property :id, Serial
 	property :content, Text
-	property :time, String
 
 end

@@ -19,6 +19,12 @@ DataMapper.auto_upgrade!
 		erb :index
 	end
 
+	post '/post' do
+		content = params["content"]
+		Post.create(:content => content)
+		redirect to('/')
+	end
+
 
 
 end
