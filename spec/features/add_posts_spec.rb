@@ -11,7 +11,7 @@ feature "user adds a new post" do
 		expect(post.content).to eq("This is my first post")
 	end
 
-	def add_post(content, time)
+	def add_post(content)
 		fill_in 'content', :with => content
 		click_button 'submit'
 	end

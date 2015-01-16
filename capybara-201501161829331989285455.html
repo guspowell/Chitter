@@ -1,7 +1,5 @@
 <div class="welcome_message">
-	<% if current_user %>
-		Welcome, <%= current_username.email %>
-	<% end %>
+	
 </div>
 
 <div id="new-post">
@@ -12,9 +10,5 @@
 </div>
 
 <ul>
-	<% @posts.each do |post| %>
-		<li>
-			<%= post.content %>
-		</li>
-	<% end %>
+	
 </ul>
