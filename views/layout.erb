@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="/stylesheets/reset.css"/>
+		<link type="text/css" rel="stylesheet" href="/stylesheets/stylesheet.css"/>
+		<title>Chitter</title>
+	</head>
+
+<body>
+  <% if current_user %>
+    Welcome, <%= current_user.username %>
+  <% end %>
+  <%= yield %>
+</body>
+
+</html>
