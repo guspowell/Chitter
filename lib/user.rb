@@ -7,10 +7,12 @@ class User
 	attr_reader :password
 	attr_accessor :password_confirmation
 	validates_confirmation_of :password
+  validates_uniqueness_of :email
+  validates_uniqueness_of :username
 
   property :id, Serial
-  property :email, String
-  property :username, String
+  property :email, String, :unique => true
+  property :username, String, :unique => true
   property :password_digest, Text
 
   def password=(password)
