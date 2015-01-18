@@ -1,11 +1,12 @@
 
 
-<div id="new-post">
+<div class="new-post">
 	<form action="/post" method="post">
-		<input type="text" name="content">
+		<input class="postbox" type="text" name="content">
 		<input type="submit" value="submit">
 	</form>
 </div>
+
 
 <ul>
 	<% @posts.each do |post| %>
