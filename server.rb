@@ -49,6 +49,22 @@ use Rack::Flash
 		end
 	end
 
+	get '/sessions/new' do
+	  erb :"sessions/new"
+	end
+
+	post '/sessions' do
+		username = params[:username]
+		password = params[:password]
+		user = User.authenticate(username, password)
+		if user
+			session[:id] = user.id
+			redirect to('/')
+		else
+			flash[:errors] = ["The email or password is incorrect"]
+		end
+	end
+
 	helpers do
 
 	  def current_user
