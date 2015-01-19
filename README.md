@@ -12,3 +12,12 @@ Use data mapper and postgres to save the data.
 You don't have to be logged in to see the peeps.
 You only can peep if you are logged in.
 Please ensure that you put all your work in at Github Repository called "Chitter"
+
+
+PROBLEMS
+
+can sign in by registering but signing in normally doesn't give 'welcome, gus'
+
+adding time to posts sorting posts by time
+
+rake not working

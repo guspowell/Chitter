@@ -55,8 +55,7 @@ use Rack::MethodOverride
 	end
 
 	post '/sessions' do
-		username = params[:username]
-		password = params[:password]
+		username, password = params[:username], params[:password]
 		user = User.authenticate(username, password)
 		if user
 			session[:id] = user.id

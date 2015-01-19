@@ -18,19 +18,20 @@
   <% end %>
 
 <header>
-  <div id="logo">Chitter</div>
+  <a href="/"<div id="logo">Chitter</div></a>
   
   <div id="welcome-googbye">
     <% if current_user %>
       Welcome, <%= current_user.username %>
     <% end %>
-  </div>
 
   <% if flash[:notice] %>
     <div id="notice">
       <%= flash[:notice] %>
     </div>
   <% end %>
+
+  </div>
 
   <div id="user-links">
     <% if current_user %>
