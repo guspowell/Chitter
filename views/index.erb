@@ -10,8 +10,10 @@
 
 <ul>
 	<% @posts.each do |post| %>
-		<li>
-			<%= post.content %>
-		</li>
+		<div id="ind-post">
+			<li>
+				<%= post.content %>
+			</li>
+		</div>
 	<% end %>
 </ul>

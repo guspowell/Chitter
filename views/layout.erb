@@ -8,12 +8,6 @@
 
 <body>
 
-  <% if flash[:notice] %>
-    <div id="notice">
-      <%= flash[:notice] %>
-    </div>
-  <% end %>
-
   <% if flash[:errors] && !flash[:errors].empty? %>
     Sorry, there were the following problems with the form. 
     <ul id="errors">
@@ -25,10 +19,22 @@
 
 <header>
   <div id="logo">Chitter</div>
-  <div id="user-links">
+  
+  <div id="welcome-googbye">
     <% if current_user %>
       Welcome, <%= current_user.username %>
-      <form method="post" action="/sessions">
+    <% end %>
+  </div>
+
+  <% if flash[:notice] %>
+    <div id="notice">
+      <%= flash[:notice] %>
+    </div>
+  <% end %>
+
+  <div id="user-links">
+    <% if current_user %>
+      <form id="sign-out" method="post" action="/sessions">
         <input type="hidden" name="_method" value="delete">
         <input type="submit" value="Sign out">
       </form>

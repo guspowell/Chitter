@@ -4,10 +4,12 @@ body {
 }
 
 header {
-	width: 100%;
+	width: 80%;
 	height: 60px;
-	background-color: #ff606e;
-	color: white;
+	margin: 0 auto;
+	background-color: white;
+	border-bottom: 1px solid  #CCCCCC;
+	color: black;
 	display: flex;
 	padding: 10px 30px;
 	text-decoration: none;
@@ -23,7 +25,7 @@ header #logo {
 	display: flex;
 	font-size: 40px;
 	font-family: "HelveticaNeue-Light";
-	color: #253939;
+	color: #009999;
 }
 
 header #user-links {
@@ -32,58 +34,89 @@ header #user-links {
 	text-align: right;
 }
 
-header a {
-	color: white;
-	text-decoration: none;
-}
-
 a.button {
 	display: inline-block;
 	width: 80px;
 	height: 25px;
-	background-color: #517398;
+	background-color: white;
 	border-width: 1px;
 	border-style: solid;
-	border-color: white;
-	color: white;
+	border-color: #CCCCCC;
+	color: black;
 	text-decoration: none;
 	padding: 0px 10px;
 	text-align: center;
 	border-radius: 2px;
 	margin-left: 5px;
 	margin-right: 5px;
-	text-shadow: 0 0 2px rgba(0,0,0, 0.4);
+	padding-top: 6px;
 }
 
-a.button.highlighted {
-  background-color: #262c3a;
-}
-
-#links {
+header input[type=submit] {
+	display: inline-block;
+	width: 90px;
+	height: 25px;
 	background-color: white;
 	border-width: 1px;
 	border-style: solid;
-	border-color: #00ddd8;
-	width: 80%;
-	margin: 0 auto;
-	padding: 20px;
+	border-color: #CCCCCC;
+	color: black;
+	text-decoration: none;
+	padding: 0px 10px;
+	text-align: center;
+	border-radius: 2px;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-family: "HelveticaNeue-Light";
+	font-size: 0.8em;
 }
 
 .postbox {
 	width: 700px;
 	height: 80px;
-	border: 1px solid #999999;
-	padding: 5px; }
+	border: 1px solid  #CCCCCC;
+	padding: 5px;
+	margin-bottom: 20px;
+}
+
+.new-post input[type=submit] {
+	display: inline-block;
+	width: 100px;
+	height: 40px;
+	background-color: white;
+	border-width: 1px;
+	border-style: solid;
+	border-color:  #009999;
+	color: black;
+	text-decoration: none;
+	padding: 0px 10px;
+	border-radius: 5px;
+	margin-left: 18px;
+	margin-right: 5px;
+	font-family: "HelveticaNeue-Light";
+	font-size: 1em;
+}
 
 .new-post {
 	text-align: center;
 }
 
+.sign-in-form {
+	text-align: center;
+}
 
+.welcome-googbye {
+	color: red;
+}
 
-
-
-
+#ind-post {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	margin-top: 15px;
+	padding: 15px 0px 0px 60px;
+	border-top: 1px solid #CCCCCC;
+}
 
 
 
