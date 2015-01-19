@@ -21,13 +21,13 @@ use Rack::Flash
 use Rack::MethodOverride
 
 	get '/' do
-		@posts = Post.all
+		@posts = Post.all(:order => [ :created_at.desc])
 		erb :index
 	end
 
 	post '/post' do
 		content = params["content"]
-		Post.create(:content => content, :user_id => session[:user_id])
+		Post.create(:content => content, :user_id => session[:user_id], :created_at => Time.now)
 		redirect to('/')
 	end
 
