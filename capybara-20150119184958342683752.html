@@ -9,44 +9,42 @@
 
 <body>
 
-  <% if flash[:errors] && !flash[:errors].empty? %>
-    Sorry, there were the following problems with the form. 
-    <ul id="errors">
-      <% flash[:errors].each do |error| %>
-        <li><%= error %></li>
-      <% end %>
-    </ul>
-  <% end %>
+  
 
 <header>
   <a href="/"<div id="logo">Chitter</div></a>
   <div id="welcome-googbye">
-    <% if current_user %>
-      Welcome, <%= current_user.username %>
-    <% end %>
+    
+      Welcome, test
+    
 
-  <% if flash[:notice] %>
-    <div id="notice">
-      <%= flash[:notice] %>
-    </div>
-  <% end %>
+  
 
   </div>
 
   <div id="user-links">
-    <% if current_user %>
+    
       <form id="sign-out" method="post" action="/sessions">
         <input type="hidden" name="_method" value="delete">
         <input type="submit" value="Sign out">
       </form>
-    <% else %>
-      <a href='/users/new' id='sign-up' class='button'>Sign up</a>
-      <a href='/sessions/new' id='sign-in' class='button'>Sign in</a>
-    <% end %>
+    
   </div>
 </header>
 
-  <%= yield %>
+  <div class="new-post">
+	
+		<form action="/post" method="post">
+			<input class="postbox" type="text" name="content">
+			<input type="submit" value="submit">
+		</form>
+	
+</div>
+
+
+<ul>
+	
+</ul>
 
 </body>
 

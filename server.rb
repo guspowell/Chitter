@@ -27,7 +27,7 @@ use Rack::MethodOverride
 
 	post '/post' do
 		content = params["content"]
-		Post.create(:content => content)
+		Post.create(:content => content, :user_id => session[:user_id])
 		redirect to('/')
 	end
 
