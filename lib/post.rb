@@ -4,5 +4,6 @@ class Post
 
 	property :id, Serial
 	property :content, Text
+	# property :created_at, DataTime
 
 end

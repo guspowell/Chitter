@@ -14,10 +14,14 @@ You only can peep if you are logged in.
 Please ensure that you put all your work in at Github Repository called "Chitter"
 
 
+
+
 PROBLEMS
 
-can sign in by registering but signing in normally doesn't give 'welcome, gus'
+can sign in by registering but signing in normally doesn't give 'welcome, test'
 
 adding time to posts sorting posts by time
+
+linking username to post and displaying it
 
 rake not working

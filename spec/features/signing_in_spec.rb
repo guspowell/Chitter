@@ -18,4 +18,12 @@ feature "User signs in" do
     expect(page).to have_content("Welcome, test")
   end
 
+  scenario "with incorrect credentials" do
+    visit '/'
+    expect(page).not_to have_content("Welcome, test@test.com")
+    sign_in('test@test.com', 'wrong')
+    expect(page).not_to have_content("Welcome, test@test.com")
+  end
+
+
  end
