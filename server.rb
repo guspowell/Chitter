@@ -58,7 +58,7 @@ use Rack::MethodOverride
 		username, password = params[:username], params[:password]
 		user = User.authenticate(username, password)
 		if user
-			session[:id] = user.id
+			session[:user_id] = user.id
 			redirect to('/')
 		else
 			flash[:errors] = ["The email or password is incorrect"]
