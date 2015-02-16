@@ -1,27 +1,42 @@
-In order to use chitter as a maker I want to sign up to the service
-In order to user chitter as a maker I want to log in
-In order to avoid others using my account as a maker I want to log out
-In order to let people know what I am doing as a maker I want to post a message (peep) to chitter
-In order to see what people have to say as a maker I want to see all peeps in chronological order
+Title
+=======================
 
-Makers sign up to chitter with their email, password, name and a user name (e.g. sam@makersacademy.com, s3cr3t, Samuel Russell Hampden Joseph, tansaku).
-The username and email are unique.
-Peeps (posts to chitter) have the name of the maker and their user handle.
-Use bcrypt to secure the passwords.
-Use data mapper and postgres to save the data.
-You don't have to be logged in to see the peeps.
-You only can peep if you are logged in.
-Please ensure that you put all your work in at Github Repository called "Chitter"
+## Synopsis
 
+TODO: Enter a description of your project here.
 
+![NAME_OF_IMAGE](http://ENTER_URL)
 
+## Technologies Used
 
-PROBLEMS
+- LANGUAGE_ONE
+- LANGUAGE_TWO
+- FRAMEWORK
+- TESTING SUITES
 
-can sign in by registering but signing in normally doesn't give 'welcome, test'
+## Job List
 
-adding time to posts sorting posts by time
+- [ ]
+- [ ]
+- [ ]
+- [ ]
 
-linking username to post and displaying it
+## Favourite Code Snippet
 
-rake not working
+~~~
+ TODO: paste code here
+~~~
+
+## Collaborators
+
+- NAME_ONE (http://www.github.com/USERNAME)
+- NAME_TWO (http://www.github.com/USERNAME)
+
+## Still to complete/refactor
+
+- [ ]
+- [ ]
+
+## Takeaway
+
+TODO: Enter a personal reflection and/or things you learnt
