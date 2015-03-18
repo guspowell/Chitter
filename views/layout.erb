@@ -3,6 +3,7 @@
 	<head>
 		<link type="text/css" rel="stylesheet" href="/stylesheets/reset.css"/>
 		<link type="text/css" rel="stylesheet" href="/stylesheets/stylesheet.css"/>
+		<link type="text/css" rel="stylesheet" href="/stylesheets/user_mgmt.css"/>
     <link type="text/css" rel="stylesheet" href="/stylesheets/normalize.css"/>
 		<title>Chitter</title>
 	</head>
@@ -10,7 +11,7 @@
 <body>
 
   <% if flash[:errors] && !flash[:errors].empty? %>
-    Sorry, there were the following problems with the form. 
+    Sorry, there were the following problems with the form.
     <ul id="errors">
       <% flash[:errors].each do |error| %>
         <li><%= error %></li>

@@ -1,13 +1,15 @@
-<div id="form">
+<div id="form-container" class="register">
 
-	<h1>Please fill out this form to register:</h1><br><br>
+	<div id="form">
+		<h1>Please fill out this form to register:</h1><br><br>
 
-	<form action="/users" method="post">
-		Email: <input name="email" type="text" value="<%= @user.email %>"><br><br>
-	  Username: <input name="username" type="text"><br><br>
-	  Password: <input name="password" type="password"><br><br>
-	  Password confirmation: <input name="password_confirmation" type="password"><br><br>
-	  <input type="submit" value="Sign up">
-	</form>
+		<form action="/users" method="post">
+			Email:<br> <input name="email" type="text" value="<%= @user.email %>"><br>
+		  Username:<br> <input name="username" type="text"><br>
+		  Password:<br> <input name="password" type="password"><br>
+		  Password confirmation:<br> <input name="password_confirmation" type="password"><br><br>
+		  <input type="submit" value="Sign up" class="signup-button">
+		</form>
+	</div>
 
 </div>

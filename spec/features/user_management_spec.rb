@@ -18,16 +18,10 @@ feature 'User signs up' do
     expect(page).to have_content("Password does not match the confirmation")
   end
 
-  # scenario "with an email that is already registered" do
-  # 	expect{ sign_up }.to change(User, :count).by(1)
-  # 	expect{ sign_up }.to change(User, :count).by(0)
-  # 	expect(page).to have_content("Email is already taken")
-  # end	
-
   scenario "with a username that is already registered" do
   	expect{ sign_up }.to change(User, :count).by(1)
   	expect{ sign_up }.to change(User, :count).by(0)
   	expect(page).to have_content("Username is already taken")
-  end	
+  end
 
 end
