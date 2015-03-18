@@ -52,7 +52,6 @@ Run RSpec:
 rspec
 ```
 ## Favourite Code Snippet
-
 ~~~ruby
 def self.authenticate(username, password)
   user= first(:username => username)
