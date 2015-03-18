@@ -38,9 +38,9 @@ use Rack::MethodOverride
 
 	post '/users' do
 	  @user = User.new(:email => params[:email],
-	              :password => params[:password],
-	              :username => params[:username],
-	              :password_confirmation => params[:password_confirmation])
+	              		 :password => params[:password],
+	              		 :username => params[:username],
+	              		 :password_confirmation => params[:password_confirmation])
 		if @user.save
 		  session[:user_id] = @user.id
 		  redirect to('/')
